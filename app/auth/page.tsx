@@ -45,12 +45,12 @@ export default function AuthPage() {
     { value: "professional", label: "Working Professional", requiresInstitution: false },
   ]
 
-  // Placeholder function for Google OAuth
-  const handleGoogleAuth = () => {
-    if (!selectedRole) {
-      alert("Please select your role first")
-      return
-    }
+import { signInWithGoogle } from "@/lib/firebase";
+
+const handleGoogleAuth = () => {
+  signInWithGoogle();
+};
+
 
     const roleData = roleOptions.find((r) => r.value === selectedRole)
     const institutionValue = roleData?.isCompany ? companyName : institutionName
