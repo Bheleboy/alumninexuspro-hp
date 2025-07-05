@@ -131,11 +131,13 @@ export default function DemoPage() {
     switch (screen.id) {
       case 1: // Landing Page
         return (
-          <div className="bg-gradient-to-br from-[#002366] to-[#001a4d] text-white p-8 rounded-lg">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#002366] font-bold text-xl">AN</span>
-              </div>
+          <Image
+  src="/alumni-nexus-pro-logo.png"
+  alt="Alumni Nexus Pro Logo"
+  width={40}
+  height={40}
+  className="rounded-full object-contain"
+/>
               <h1 className="text-3xl font-serif font-bold mb-4">Alumni Nexus Pro</h1>
               <p className="text-xl mb-6">Verified Connections for Life</p>
               <div className="flex justify-center space-x-4">
