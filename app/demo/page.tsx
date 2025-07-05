@@ -546,12 +546,16 @@ export default function DemoPage() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#002366] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AN</span>
-            </div>
-            <span className="text-xl font-serif font-bold text-[#002366]">Alumni Nexus Pro</span>
-          </Link>
+         <Link href="/" className="flex items-center space-x-2">
+  <Image
+    src="/alumni-nexus-pro-logo.png"
+    alt="Alumni Nexus Pro Logo"
+    width={40}
+    height={40}
+    className="rounded-full object-contain"
+  />
+  <span className="text-xl font-serif font-bold text-[#002366]">Alumni Nexus Pro</span>
+</Link>
           <Link href="/">
             <Button variant="outline" className="border-[#002366] text-[#002366] hover:bg-[#002366] hover:text-white">
               Back to Home
